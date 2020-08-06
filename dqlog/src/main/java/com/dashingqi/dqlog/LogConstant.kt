@@ -26,4 +26,9 @@ object LogConstant {
 
     const val LOG_END =
         "====================================== end print ========================================="
+
+    /**
+     * 换行符
+     */
+     val LINE_ENTER = System.getProperty("line.separator")
 }

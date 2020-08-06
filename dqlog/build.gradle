@@ -8,7 +8,7 @@ publish {
     userOrg = 'dashingqi'      // bintray注册的用户名
     groupId = 'com.dashingqi'
     artifactId = 'dqlog' // bintray创建的package 仓库下面对应的package名字
-    publishVersion = '0.9.9'
+    publishVersion = '0.9.9.1'
     desc = 'beta version'
     bintrayUser = 'dashingqi'
     bintrayKey = LocalBintrayKey()
