@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
         //初始化DQLog
         DQLog.setDQLogInterceptor(object : DQLogInterceptor {
             override fun process(level: Int): Boolean {
-                return false
+                return !BuildConfig.DEBUG
             }
 
         })
