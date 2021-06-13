@@ -24,13 +24,3 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
-
-def LocalBintrayKey() {
-    Properties properties = new Properties()
-    def file = rootProject.file('local.properties')
-    if (file.exists()) {
-        InputStream inputStream = file.newDataInputStream()
-        properties.load(inputStream)
-        properties.getProperty('dqPayBintrayKey')
-    }
-}
