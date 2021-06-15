@@ -2,7 +2,15 @@
 通用的日志打印
 
 ## 使用步骤
-
+#### 配置 
+```gradle
+allprojects {
+    repositories {
+        mavenCentral()
+    }
+}
+```
+> implementation 'io.github.dashingqi:log:0.0.1'
 #### 初始化
 > 初始化阶段主要做两件事情
 > 1. 设置日志打印的开关
