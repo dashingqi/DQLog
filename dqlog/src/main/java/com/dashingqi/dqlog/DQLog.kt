@@ -20,7 +20,7 @@ object DQLog {
     /**
      * ===========================================打印基本数据===========================================
      */
-    fun v(msg: Any?) {
+    fun v(msg: Any) {
         v(null, msg)
     }
 
@@ -28,35 +28,35 @@ object DQLog {
         printMessage(LogConstant.Level_V, tag, msg)
     }
 
-    fun d(msg: Any?) {
+    fun d(msg: Any) {
         d(null, msg)
     }
 
-    fun d(tag: String?, msg: Any?) {
+    fun d(tag: String?, msg: Any) {
         printMessage(LogConstant.Level_D, tag, msg)
     }
 
-    fun i(msg: Any?) {
+    fun i(msg: Any) {
         i(null, msg)
     }
 
-    fun i(tag: String?, msg: Any?) {
+    fun i(tag: String?, msg: Any) {
         printMessage(LogConstant.Level_I, tag, msg)
     }
 
-    fun w(msg: Any?) {
+    fun w(msg: Any) {
         w(null, msg)
     }
 
-    fun w(tag: String?, msg: Any?) {
+    fun w(tag: String?, msg: Any) {
         printMessage(LogConstant.Level_W, tag, msg)
     }
 
-    fun e(msg: Any?) {
+    fun e(msg: Any) {
         e(null, msg)
     }
 
-    fun e(tag: String?, msg: Any?) {
+    fun e(tag: String?, msg: Any) {
         printMessage(LogConstant.Level_E, tag, msg)
     }
 
@@ -89,11 +89,11 @@ object DQLog {
     /**
      * 打印字符串信息
      */
-    private fun printStrMessage(level: Int, tag: String, msg: String?) {
+    private fun printStrMessage(level: Int, tag: String, msg: String) {
         print(level, tag, msg)
     }
 
-    private fun print(level: Int, tag: String, msg: String?) {
+    private fun print(level: Int, tag: String, msg: String) {
         when (level) {
             LogConstant.Level_I -> {
                 Log.i(tag, msg)
